@@ -42,13 +42,10 @@ export function query<T extends DynamoItem>(client: DynamoDBClient, cmd: QueryCo
 			res.LastEvaluatedKey
 				? defer(() =>
 						client.send(
-							new QueryCommand(
-								Object.freeze(
-									Object.assign({}, cmd.input, {
-										ExclusiveStartKey: res.LastEvaluatedKey,
-									}),
-								),
-							),
+							new QueryCommand({
+								...cmd.input,
+								ExclusiveStartKey: res.LastEvaluatedKey,
+							}),
 						),
 				  )
 				: EMPTY,
@@ -63,13 +60,10 @@ export function scan<T extends DynamoItem>(client: DynamoDBClient, cmd: ScanComm
 			res.LastEvaluatedKey
 				? defer(() =>
 						client.send(
-							new ScanCommand(
-								Object.freeze(
-									Object.assign({}, cmd.input, {
-										ExclusiveStartKey: res.LastEvaluatedKey,
-									}),
-								),
-							),
+							new ScanCommand({
+								...cmd.input,
+								ExclusiveStartKey: res.LastEvaluatedKey,
+							}),
 						),
 				  )
 				: EMPTY,
