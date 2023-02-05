@@ -16,6 +16,7 @@
 		"noUnusedParameters": true,
 		"pretty": true,
 		"useUnknownInCatchVariables": true,
-		"outDir": "dist"
+		"outDir": "dist",
+		"declaration": true
 	}
 }
