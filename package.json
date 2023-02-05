@@ -11,6 +11,7 @@
     "build:all": "pnpm nx run-many --target=build",
     "lint:all": "pnpm nx run-many --target=lint",
     "lint:fix:all": "pnpm nx run-many --target=lint:fix",
+		"publish": "pnpm nx run-many --target=publish",
     "prepare": "pnpm husky install"
   },
   "devDependencies": {

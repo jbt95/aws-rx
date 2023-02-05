@@ -10,7 +10,10 @@
 		"type:check": "pnpm tsc --noEmit",
 		"build": "pnpm tsc --build",
 		"lint": "pnpm eslint . && pnpm prettier --check . ",
-		"lint:fix": "pnpm eslint . --fix && pnpm prettier --write ."
+		"lint:fix": "pnpm eslint . --fix && pnpm prettier --write .",
+		"publish": "pnpm publish",
+		"prepack": "pnpm build",
+		"postpack": "pnpm clean"
 	},
 	"devDependencies": {
 		"@types/eslint": "^8.4.6",
