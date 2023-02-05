@@ -5,6 +5,10 @@
 	"main": "dist/index.js",
 	"types": "src/index.ts",
 	"author": "Jordi Bermejo <berme495@gmail.com>",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
 	"license": "ISC",
 	"scripts": {
 		"type:check": "pnpm tsc --noEmit",

@@ -4,6 +4,10 @@
 	"packageManager": "pnpm@7.26.3",
 	"main": "dist/index.js",
 	"types": "src/index.ts",
+	"publishConfig": {
+		"access": "public",
+		"registry": "https://registry.npmjs.org/"
+	},
 	"author": "Jordi Bermejo <berme495@gmail.com>",
 	"license": "ISC",
 	"scripts": {
