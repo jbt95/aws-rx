@@ -1,5 +1,5 @@
 {
-	"name": "@aws-rx/s3",
+	"name": "aws-rx-s3",
 	"version": "1.0.0",
 	"packageManager": "pnpm@7.26.3",
 	"main": "dist/index.js",
