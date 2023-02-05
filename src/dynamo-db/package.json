@@ -1,0 +1,42 @@
+{
+	"name": "@aws-rx/dynamo-db",
+	"version": "1.0.0",
+	"packageManager": "pnpm@7.26.3",
+	"main": "dist/index.js",
+	"types": "src/index.ts",
+	"author": "Jordi Bermejo <berme495@gmail.com>",
+	"license": "ISC",
+	"scripts": {
+		"type:check": "pnpm tsc --noEmit",
+		"build": "pnpm tsc --build",
+		"lint": "pnpm eslint . && pnpm prettier --check . ",
+		"lint:fix": "pnpm eslint . --fix && pnpm prettier --write ."
+	},
+	"devDependencies": {
+		"@types/eslint": "^8.4.6",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "^18.7.18",
+		"@typescript-eslint/eslint-plugin": "^5.35.1",
+		"@typescript-eslint/parser": "^5.35.1",
+		"eslint": "^8.22.0",
+		"eslint-config-prettier": "^8.5.0",
+		"husky": "^8.0.1",
+		"lint-staged": "^13.0.3",
+		"mocha": "^10.0.0",
+		"mocha-minimalist-reporter": "^1.1.0",
+		"nyc": "^15.1.0",
+		"prettier": "^2.7.1",
+		"source-map-support": "^0.5.16",
+		"ts-node": "^10.0.0",
+		"typescript": "^4.6.3",
+		"nx": "15.6.3"
+	},
+	"dependencies": {
+		"@aws-sdk/client-cloudwatch-logs": "^3.264.0",
+		"@aws-sdk/client-dynamodb": "^3.264.0",
+		"@aws-sdk/client-s3": "^3.264.0",
+		"@aws-sdk/client-sns": "^3.264.0",
+		"@aws-sdk/client-sqs": "^3.264.0",
+		"rxjs": "^7.8.0"
+	}
+}
