@@ -12,8 +12,7 @@
 		"lint": "pnpm eslint . && pnpm prettier --check . ",
 		"lint:fix": "pnpm eslint . --fix && pnpm prettier --write .",
 		"publish": "pnpm publish",
-		"prepack": "pnpm build",
-		"postpack": "pnpm clean"
+		"prepack": "pnpm build"
 	},
 	"devDependencies": {
 		"@types/eslint": "^8.4.6",
