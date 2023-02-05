@@ -20,7 +20,6 @@
 		"build": "pnpm tsc --build",
 		"lint": "pnpm eslint . && pnpm prettier --check . ",
 		"lint:fix": "pnpm eslint . --fix && pnpm prettier --write .",
-		"publish": "pnpm publish",
 		"prepack": "pnpm build"
 	},
 	"devDependencies": {
