@@ -3,6 +3,10 @@
   "version": "1.0.0",
 	"packageManager": "pnpm@7.26.3",
   "author": "Jordi Bermejo <berme495@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jbt95/aws-rx"
+	},
   "license": "ISC",
   "scripts": {
     "type:check:all": "pnpm nx run-many --target=type:check",
