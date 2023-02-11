@@ -1,23 +1,23 @@
 {
   "name": "aws-rx",
   "version": "1.0.0",
-	"packageManager": "pnpm@7.26.3",
+  "packageManager": "pnpm@7.26.3",
   "author": "Jordi Bermejo <berme495@gmail.com>",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/jbt95/aws-rx"
-	},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbt95/aws-rx"
+  },
   "license": "ISC",
   "scripts": {
     "type:check:all": "pnpm nx run-many --target=type:check",
     "build:all": "pnpm nx run-many --target=build",
     "lint:all": "pnpm nx run-many --target=lint",
     "lint:fix:all": "pnpm nx run-many --target=lint:fix",
-		"publish": "pnpm nx run-many --target=publish",
+    "publish": "pnpm nx run-many --target=publish",
     "prepare": "pnpm husky install"
   },
   "devDependencies": {
-    "husky": "^8.0.1",
+    "husky": "^8.0.3",
     "nx": "15.6.3"
   }
 }
